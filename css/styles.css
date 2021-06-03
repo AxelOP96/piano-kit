@@ -1,0 +1,125 @@
+html{
+    font-size:10px;
+    background:url(../background.svg) ;
+    background-position: center; 
+    background-size:cover; 
+}
+body,html{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.sound{
+    font-size: 1.1rem;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    color:#ffc550;
+}
+
+/* las dos del medio con justify content center y align items center */
+.key{
+    border:3px solid yellow;
+    border-radius:6px;
+    margin:1rem;
+    font-size:1.5rem;
+    padding:1rem .5rem;
+    transition: all 0.07s;
+    width:80px;
+    height:110px;
+    text-align:center;
+    color:white;
+    background: rgba(0, 0, 255, 0.8);
+    text-shadow: 0 0 5px black;
+}
+.playing {
+    transform:scale(1.1)
+    border-color(#ffc650);
+    box-shadow: 0 0 10px #ffc650;
+}
+kbd {
+    display:block;
+    font-size:30px;
+}
+.keys {
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+} 
+.bemoles{
+    background: black;
+    text-shadow: 0 0 5px;
+    color:white;
+    text-align:center;
+    border:3px solid yellow;
+    border-radius:6px;
+    margin:1rem;
+    font-size:1.5rem;
+    padding:1rem .5rem;
+    transition: all 0.07s;
+    width:60px;
+    height:100px;
+}
+/* .first{
+    /* display: float;
+    flex:1
+    min-height:100vh;
+    align-items:center;
+    justify-content:center; */
+/* } */ 
+.key:hover {
+    transform: scale(1.1);
+    background-color:white;
+    color:black;
+}
+.bemoles:hover {
+    transform:scale(1.1);
+}
+.first{
+    display:flex;
+    align-items:flex-start;
+} 
+.second{
+    display:flex;
+    align-items:flex-start;
+} 
+.third{
+    display:flex;
+    align-items:flex-start;
+} 
+.fourth{
+    display:flex;
+    align-items:flex-start;
+} 
+
+/* flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+
+
+Ahora usa align-items para ayudar a las ranas a llegar al fondo del estanque. Esta propiedad CSS alinea elementos verticalmente y acepta los siguientes valores:
+
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor. */
+
+/* Las ranas necesitan ponerse en el mismo orden que sus hojas de lirio usando flex-direction. Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba. */
+/* Ayuda a las ranas a llegar a sus hojas de lirio. A pesar de que ellas parecen estar cerca, necesitarás usar flex-direction y justify-content para llegar hasta allí.
+
+Nota que cuando estableces la dirección a una fila invertida o columna, el inicio y el final también se invierten.
+justify-content:flex-end;
+flex-direction:row-reverse; al poner reverse se invierte y en vez de usar start se usa end
+A veces, invertir el orden de una fila o columna de un contenedor no es suficiente. En esos casos, nosotros podemos aplicar la propiedad order a elementos individuales. Por defecto, los elementos tienen un valor 0, pero nosotros podemos usar esta propiedad para establecerlo a un número entero positivo o negativo.
+
+Usa la propiedad order para reordenar las ranas de acuerdo a sus hojas de lirio. */
