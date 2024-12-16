@@ -80,6 +80,7 @@ kbd {
 .first{
     display:flex;
     align-items:flex-start;
+    gap: 35px;
 } 
 .second{
     display:flex;
@@ -88,6 +89,7 @@ kbd {
 .third{
     display:flex;
     align-items:flex-start;
+    gap: 35px;
 } 
 .fourth{
     display:flex;
